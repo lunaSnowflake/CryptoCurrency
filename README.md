@@ -37,6 +37,12 @@ This repository showcases the development of an end-to-end cryptocurrency dashbo
 - Machine Learning Forecasting: Develops and trains a machine learning forecasting model, updated daily through MageAI, offering accurate cryptocurrency forecasts.
 - Dynamic Reporting with PowerBI: Engineers seamless data flow from PostgreSQL to PowerBI, creating a dynamic report showcasing market scenarios, trends, sentiments, and forecasts.
 - Advanced Analysis Capabilities: Implements sophisticated DAX measures in PowerBI, equipping stakeholders with advanced statistical and technical analysis capabilities for informed decision-making in the volatile cryptocurrency landscape.
+<br/>
+
+![Power BI 1](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/80c28dc0-daae-4e3c-9e15-06e8013c7db6)
+![Power BI 2](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/662ff6b6-2338-4b0e-9883-c199227ea669)
+
+<br/>
 
 ## How to Use
 - Clone the repository to your local machine.
@@ -45,6 +51,7 @@ This repository showcases the development of an end-to-end cryptocurrency dashbo
 - Run the provided scripts for data collection, sentiment analysis, and machine learning forecasting.
 - Integrate the generated data with PowerBI for dynamic reporting.
 - Explore the dashboard and leverage advanced analysis capabilities for insightful decision-making.
+- Read [Doc.txt](https://github.com/lunaSnowflake/CryptoCurrency/blob/main/Doc.txt)
 
 ```
 cd crypto_prices-Mage.ai
