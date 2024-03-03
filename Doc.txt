@@ -1,0 +1,154 @@
+# UPDATE
+sudo yum update
+
+## KAFKA ###################################################################################################################################################
+1. Download Kafka
+wget https://downloads.apache.org/kafka/3.5.1/kafka_2.12-3.5.1.tgz
+tar -xvf <kafka.tgz file>
+
+2. Install Java (Kafka run on top of JVM)
+sudo yum install java (-1.8.0-openjdk)
+java -version
+
+# !!! PRE_REQUISITE BEFORE KAFKA
+NOTE 1: The Kafka server will point to Private DNS, 
+but for us to access we want it to point on our ec2's Public IPv4.
+To achieve this we need to alter the config/server.properties file;
+1. Open File: sudo nano config/server.properties
+2. Scroll down to "Advertise Listners"
+3. uncomment
+4. replace your.host.name with ec2's Public IP (don't change the port)
+
+NOTE 2: Everything was working fine then I started facing some issues for connection with producer,
+so I also altered config/producer.properties and replaced localhost with same ip server is pointing to 
+i.e., ec2's Public IP
+
+3. Launch Kafka ZooKeeper
+cd <Kafka folder>
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+4. Launch Kafka Server
+export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"   # increase memory allocation to kafka
+cd <Kafka folder>
+bin/kafka—server-start.sh config/server.properties
+
+5. Create Kafka Topic
+cd <Kafka folder>
+bin/kafka-topics.sh --create --topic <name> --bootstrap-server <ec2 PublicIP address:9092> --replication-factor 1 --partitions 1
+bin/kafka-topics.sh --create --topic cryptoTopic --bootstrap-server 18.182.41.111:9092 --replication-factor 1 --partitions 1
+
+6. Start Kafka Producer
+cd <Kafka folder>
+bin/kafka-console-producer.sh --topic <name> --bootstrap-server <ec2 PublicIP address:9092>
+bin/kafka-console-producer.sh --topic cryptoTopic --bootstrap-server 18.182.41.111:9092
+
+7. Start Kafka Consumer
+cd <Kafka folder>
+bin/kafka-console-consumer.sh --topic cryptoTopic --bootstrap-server <ec2 PublicIP address:9092>
+bin/kafka-console-consumer.sh --topic cryptoTopic --bootstrap-server 18.182.41.111:9092
+
+
+### OTHER USEFUL COMMANDS ###
+bin/kafka-topics.sh --describe --bootstrap-server 18.182.41.111:9092    ## check avaibility
+bin/kafka-topics.sh --list --bootstrap-server 18.182.41.111:9092        ## get list of all topics available
+bin/kafka-topics.sh --delete --bootstrap-server 18.182.41.111:9092 --topic test ## delete topic
+
+ping 18.182.41.111 ## check if your machine allowed to connect to an IP
+
+
+## MY-SQL on EC2 Linux ###################################################################################################################################################
+sudo yum install mysql
+mysql -h <DB Endpoint> -u <usernmame> -p [PRESS ENTER THEN INSERT PASSWORD]
+
+AWS RDS cyrpto-prices:
+endpoint -- crypto-price.******.ap-northeast-1.rds.amazonaws.com
+port -- 3306
+user -- admin
+pass -- ******
+DB Name -- ******
+
+## AIRFLOW on EC2 Linux ###################################################################################################################################################
+Airflow on Cryptoec2:
+username: admin
+password: uwRRhUSBRyYKZTvY
+Airflow on Cryptoec2-mumbai:
+username: admin
+password: kGbFZhbbPbautQMK
+Airflow on Cryptoec2-mumbai2:
+username: admin
+password: dUE4vwKnZ2d8X5E8
+
+## SELENIUM - CHROME on EC2 Linux ###################################################################################################################################################
+pip install selenium
+
+NOTE !!! : Chrome was giving me drizzzz, checkout the installation of Firefox instead below
+NOTE !!! : Check the version of both Drive and chrome browser is exact same
+NOTE !!! : If you don't have "apt" installed (Debian based Linux only) check out: https://www.youtube.com/watch?v=Nh6j1ufAMmg
+
+1. using apt
+sudo apt-get update
+sudo apt-get install -y chromium-browser
+sudo apt install chromium-chromedriver
+export PATH=$PATH:/usr/lib/chromium-browser/chromedriver
+/usr/lib/chromium-browser/chromedriver --version
+chromium-browser --version
+
+ref: (YT: QASCRIPT) https://www.youtube.com/watch?v=d22Jcw5z-3I
+2. using manually (didn't work last time)
+2.1. Install Chrome Driver:
+sudo wget https://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_linux64.zip
+sudo unzip chromedriver_linux64.zip  (sudo apt install unzip)
+sudo mv chromedriver /usr/bin/chromedriver
+chromedriver –version
+
+2.2. Install Chrome Binary:
+sudo curl https://intoli.com/install-google-chrome.sh | bash
+sudo mv /usr/bin/google-chrome-stable /usr/bin/google-chrome
+google-chrome –version
+
+# check with python in terminal
+python3
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--headless")
+driver = webdriver.Chrome(options=chrome_options) # This line will decide if the thing works!!! 🤞
+driver.get("https://www.google.com")
+driver.quit()
+
+## SELENIUM - FIREFOX on EC2 Linux (RECOMMENDED) ###################################################################################################################################################
+sudo apt-get update
+
+1. Install geckodriver
+''' ref: https://www.youtube.com/watch?v=xgsFwaw9W4Q '''
+''' get versions on: https://github.com/mozilla/geckodriver/releases '''
+wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz
+sudo mv geckodriver /usr/local/bin
+export PATH=$PATH:/usr/local/bin/geckodriver
+geckodriver --version ## GeckoDriver 0.33.0
+
+2. Install Firefox compatible with GeckoDriver 
+''' download Firefox 99.0, which is compatible GeckoDriver 0.33.0 '''
+wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/99.0/linux-x86_64/en-US/firefox-99.0.tar.bz2
+tar -xvf firefox-99.0.tar.bz2
+sudo mv firefox /opt/
+sudo ln -s /opt/firefox/firefox /usr/local/bin/
+
+firefox --version
+[
+''' when running "firefox --version", error related to lib... ''' IF YOUR FIREFOX IS NOT SEEMS TO WORK EXE BELOW CODE!!!
+     sudo apt-get install libasound2 libdbus-glib-1-2 libgtk-3-0
+]
+firefox --headless --version
+
+# check with python in terminal
+python3
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+firefox_options = Options()
+firefox_options.add_argument("--no-sandbox")
+firefox_options.add_argument("--headless")
+driver = webdriver.Firefox(options=firefox_options) # This line will decide if the thing works!!! 🤞
+driver.get("https://www.google.com")
+driver.quit()
