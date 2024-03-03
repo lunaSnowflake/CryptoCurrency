@@ -54,10 +54,15 @@ Also, I would appreciate it if I could get a 🌟 for this repository from your 
 <img src="https://user-images.githubusercontent.com/25181517/186884153-99edc188-e4aa-4c84-91b0-e2df260ebc33.png" width="50"> <!--Linux-->
 
 ## 💫 About Me:
+
+<span style="color:orange; font-size:20px;">magine a curious soul frolicking in the realm of Data Science and Development – that's me! With a heart brimming with joy, I dance through projects ranging from coding escapades to the magic of AI and DevOps. Technology isn't just my playground; it's my vibrant canvas where every line of code is a brushstroke of pure delight!</span>
+
+
+Check out my Github <br/>
+
 ![Dev Gif](https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif) <br/>
 
-I am a Data Scientist/Analyst and a Developer <br/>
-Check out my [GitHub](https://github.com/lunaSnowflake) profile for more details! See you on the other side :)
+[![Github](https://img.icons8.com/ios-filled/50/github.png)](https://github.com/lunaSnowflake)
 
 ## 🌐 Socials:
 [![linkedin](https://img.icons8.com/fluency/48/linkedin.png)](https://www.linkedin.com/in/hussainkhatumdi/)
