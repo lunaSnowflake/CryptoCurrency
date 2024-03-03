@@ -18,17 +18,15 @@ This repository showcases the development of an end-to-end cryptocurrency dashbo
 - Integrate the generated data with PowerBI for dynamic reporting.
 - Explore the dashboard and leverage advanced analysis capabilities for insightful decision-making.
 
+![Mage ai](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/02354665-b405-404d-924c-542ffc31f7f9)
+
+
 ```
 cd crypto_prices-Mage.ai
 mage start
 ```
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/lunaSnowflake/CryptoCurrency)
-
-
-### 🌟 Acknowledgements:
-I am open to any suggestions, connect with me anywhere! <br/>
-Also, I would appreciate it if I could get a 🌟 for this repository from your side. ☺
 
 ## 💻 Tech Stack:
 <img src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" width="50"> <!--SQL-->
@@ -39,10 +37,10 @@ Also, I would appreciate it if I could get a 🌟 for this repository from your 
 <img src="https://user-images.githubusercontent.com/25181517/184103699-d1b83c07-2d83-4d99-9a1e-83bd89e08117.png" width="50"> <!--Selenium-->
 <img src="https://i.ibb.co/Cv2cdtM/33643075.png" width="50"> <!--Airflow-->
 
-## Languages:
+### Languages:
 <img src="https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png" width="50"> <!--Python-->
 
-## Frameworks & Libraries (ML):
+### Frameworks & Libraries (ML):
 <img width="48" height="48" src="https://img.icons8.com/fluency/48/pytorch.png" alt="pytorch"/> <!--Pytorch-->
 <img src="https://user-images.githubusercontent.com/25181517/223639822-2a01e63a-a7f9-4a39-8930-61431541bc06.png" width="50"> <!--Tensorflow-->
 <img src="https://i.ibb.co/6ZqGyGR/OIP.jpg" width="50"> <!--Scikit Learn-->
@@ -50,26 +48,22 @@ Also, I would appreciate it if I could get a 🌟 for this repository from your 
 <img width="48" height="48" src="https://img.icons8.com/color/48/numpy.png" alt="numpy"/>
 <img width="48" height="48" src="https://img.icons8.com/color/48/pandas.png" alt="pandas"/>
 
-## Others
+### Others
 <img src="https://user-images.githubusercontent.com/25181517/186884153-99edc188-e4aa-4c84-91b0-e2df260ebc33.png" width="50"> <!--Linux-->
 
-## 💫 About Me:
+## <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/about-me-male.png" alt="about-me-male"/> About Me:
 
-<span style="color:orange; font-size:20px;">magine a curious soul frolicking in the realm of Data Science and Development – that's me! With a heart brimming with joy, I dance through projects ranging from coding escapades to the magic of AI and DevOps. Technology isn't just my playground; it's my vibrant canvas where every line of code is a brushstroke of pure delight!</span>
-
-
-Check out my Github <br/>
+<font color="orange">Imagine a curious soul frolicking in the realm of Data Science and Development – that's me! With a heart brimming with joy, I dance through projects ranging from coding escapades to the magic of AI and DevOps. Technology isn't just my playground; it's my vibrant canvas where every line of code is a brushstroke of pure delight! <br/> I am open to any suggestions, connect with me anywhere! Also, I would appreciate it if I could get a 🌟</font> 
+<br/>
 
 ![Dev Gif](https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif) <br/>
 
-[![Github](https://img.icons8.com/ios-filled/50/github.png)](https://github.com/lunaSnowflake)
-
 ## 🌐 Socials:
+[![Github](https://img.icons8.com/ios-filled/50/github.png)](https://github.com/lunaSnowflake)
 [![linkedin](https://img.icons8.com/fluency/48/linkedin.png)](https://www.linkedin.com/in/hussainkhatumdi/)
-[![Kaggle](https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-kaggle-an-online-community-of-data-scientists-and-machine-learners-owned-by-google-logo-color-tal-revivo.png)](https://www.kaggle.com/lunaticsain)
+[<img src="https://i.ibb.co/5MsxX1w/kaggle-icon-512x512-ubnqei0x.png" width="48px">](https://www.kaggle.com/lunaticsain)
 [![Medium](https://img.icons8.com/sf-regular-filled/48/medium-logo.png)](https://medium.com/@hussainkhatumadi53) 
 [![Twitter](https://img.icons8.com/color/48/twitter--v1.png)](https://twitter.com/lunatic_sain) 
-<br/>
 <br/>
 <br/>
 
