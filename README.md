@@ -46,15 +46,22 @@ This repository showcases the development of an end-to-end cryptocurrency dashbo
 - Integrate the generated data with PowerBI for dynamic reporting.
 - Explore the dashboard and leverage advanced analysis capabilities for insightful decision-making.
 
-![Mage ai](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/02354665-b405-404d-924c-542ffc31f7f9)
-
-
 ```
 cd crypto_prices-Mage.ai
 mage start
 ```
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/lunaSnowflake/CryptoCurrency)
+![Mage ai](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/02354665-b405-404d-924c-542ffc31f7f9)
+
+<!--[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/lunaSnowflake/CryptoCurrency)-->
+
+<div align="center">
+  <a href="https://gitpod.io/#https://github.com/lunaSnowflake/CryptoCurrency">
+    <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod">
+  </a>
+</div>
+
+
 
 ## 💻 Tech Stack:
 <img src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" width="50"> <!--SQL-->
