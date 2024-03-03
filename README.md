@@ -2,6 +2,9 @@
 
 This repository showcases the development of an end-to-end cryptocurrency dashboard orchestrated on AWS infrastructure using MageAI. The dashboard captures real-time OHLC (Open, High, Low, Close) data via an API and stores it in AWS PostgreSQL. Additionally, it integrates web scraping and NLP BERT sentiment analysis to quantify public sentiments, enriching stakeholders' comprehension of market dynamics.
 
+![Crypto Project Flow](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/b83c747f-6634-4d8e-894a-18eda63b6739)
+
+
 ## Features
 - Real-time Data Capture: Utilizes an API to fetch real-time OHLC data for cryptocurrencies.
 - Storage in AWS PostgreSQL: Stores the collected data securely in AWS PostgreSQL for further analysis.
@@ -36,6 +39,7 @@ mage start
 <img src="https://user-images.githubusercontent.com/25181517/192107004-2d2fff80-d207-4916-8a3e-130fee5ee495.png" width="50"> <!--kafka-->
 <img src="https://user-images.githubusercontent.com/25181517/184103699-d1b83c07-2d83-4d99-9a1e-83bd89e08117.png" width="50"> <!--Selenium-->
 <img src="https://i.ibb.co/Cv2cdtM/33643075.png" width="50"> <!--Airflow-->
+<img width="48" height="48" src="https://img.icons8.com/emoji/48/hugging-face.png" alt="hugging-face"/> <!--HuggingFace-->
 
 ### Languages:
 <img src="https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png" width="50"> <!--Python-->
