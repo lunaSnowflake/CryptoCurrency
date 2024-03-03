@@ -4,6 +4,31 @@ This repository showcases the development of an end-to-end cryptocurrency dashbo
 
 ![Crypto Project Flow](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/b83c747f-6634-4d8e-894a-18eda63b6739)
 
+1. Data Collection:
+   - Use the "Coindesk" source to collect cryptocurrency price data.
+   - Utilize the "Price Requester (Mage.ai-Python)" to fetch the prices from Coindesk.
+   - Store the collected data in the "AWS S3" bucket.
+
+2. Data Processing:
+   - Set up a "Kafka Server (AWS EC2)" to handle data streaming.
+   - Create a "Producer" to send the collected price data to the Kafka server.
+   - Implement a "Consumer" to receive the data from the Kafka server.
+
+3. Data Storage and Analysis:
+   - Store the collected prices in the "AWS DB (Prices)" for further analysis.
+   - Use the "AWS Crawler" to extract relevant information from the collected data.
+   - Set up a "Forecast (Python)" module to predict future cryptocurrency prices.
+   - Visualize the forecasted data using "PowerBI".
+   - Store the forecasted prices in the "AWS DB (Forecasted)".
+
+4. News Scrapping and Sentiment Analysis:
+   - Implement a "News Scrapping (Mage.ai-Python)" module to gather news articles related to cryptocurrencies from "Bing News".
+   - Perform sentiment analysis using "Sentiment Analysis (Hugging-Face)".
+   - Store the sentiment analysis results in the "AWS DB (Sentiments)".
+
+5. Project Integration:
+   - Combine all the collected and analyzed data to create a comprehensive view of the cryptocurrency market.
+   - Use "PQ - Power Query" to clean and transform the data for further analysis or visualization.
 
 ## Features
 - Real-time Data Capture: Utilizes an API to fetch real-time OHLC data for cryptocurrencies.
