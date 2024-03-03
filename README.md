@@ -2,7 +2,7 @@
 
 This repository showcases the development of an end-to-end cryptocurrency dashboard orchestrated on AWS infrastructure using MageAI. The dashboard captures real-time OHLC (Open, High, Low, Close) data via an API and stores it in AWS PostgreSQL. Additionally, it integrates web scraping and NLP BERT sentiment analysis to quantify public sentiments, enriching stakeholders' comprehension of market dynamics.
 
-![Crypto Project Flow](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/b83c747f-6634-4d8e-894a-18eda63b6739)
+![Crypto Project Flow](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/9093e245-8b81-4b3e-81ac-540588969cba)
 
 1. Data Collection:
    - Use the "Coindesk" source to collect cryptocurrency price data.
@@ -22,7 +22,7 @@ This repository showcases the development of an end-to-end cryptocurrency dashbo
    - Store the forecasted prices in the "AWS DB (Forecasted)".
 
 4. News Scrapping and Sentiment Analysis:
-   - Implement a "News Scrapping (Mage.ai-Python)" module to gather news articles related to cryptocurrencies from "Bing News".
+   - Implement a "News Scrapping (Mage.ai-Python)" module to gather news articles related to cryptocurrencies from "Bing News" and "Coin MarketCap".
    - Perform sentiment analysis using "Sentiment Analysis (Hugging-Face)".
    - Store the sentiment analysis results in the "AWS DB (Sentiments)".
 
