@@ -37,6 +37,12 @@ This repository showcases the development of an end-to-end cryptocurrency dashbo
 - Machine Learning Forecasting: Develops and trains a machine learning forecasting model, updated daily through MageAI, offering accurate cryptocurrency forecasts.
 - Dynamic Reporting with PowerBI: Engineers seamless data flow from PostgreSQL to PowerBI, creating a dynamic report showcasing market scenarios, trends, sentiments, and forecasts.
 - Advanced Analysis Capabilities: Implements sophisticated DAX measures in PowerBI, equipping stakeholders with advanced statistical and technical analysis capabilities for informed decision-making in the volatile cryptocurrency landscape.
+<br/>
+
+![Power BI 1](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/80c28dc0-daae-4e3c-9e15-06e8013c7db6)
+![Power BI 2](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/662ff6b6-2338-4b0e-9883-c199227ea669)
+
+<br/>
 
 ## How to Use
 - Clone the repository to your local machine.
@@ -45,16 +51,24 @@ This repository showcases the development of an end-to-end cryptocurrency dashbo
 - Run the provided scripts for data collection, sentiment analysis, and machine learning forecasting.
 - Integrate the generated data with PowerBI for dynamic reporting.
 - Explore the dashboard and leverage advanced analysis capabilities for insightful decision-making.
-
-![Mage ai](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/02354665-b405-404d-924c-542ffc31f7f9)
-
+- Read [Doc.txt](https://github.com/lunaSnowflake/CryptoCurrency/blob/main/Doc.txt)
 
 ```
 cd crypto_prices-Mage.ai
 mage start
 ```
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/lunaSnowflake/CryptoCurrency)
+![Mage ai](https://github.com/lunaSnowflake/CryptoCurrency/assets/110465395/02354665-b405-404d-924c-542ffc31f7f9)
+
+<!--[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/lunaSnowflake/CryptoCurrency)-->
+
+<div align="center">
+  <a href="https://gitpod.io/#https://github.com/lunaSnowflake/CryptoCurrency">
+    <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod">
+  </a>
+</div>
+
+
 
 ## 💻 Tech Stack:
 <img src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" width="50"> <!--SQL-->
