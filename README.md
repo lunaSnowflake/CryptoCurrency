@@ -1,15 +1,30 @@
 # CryptoCurrency
 
-Orchestrated an end-to-end cryptocurrency dashboard on AWS infrastructure with MageAI, capturing real-time OHLC data via an API and storing it in AWS PostgreSQL.
-Integrated web scraping and NLP BERT sentiment analysis to quantify public sentiments, enriching stakeholders' comprehension of market dynamics.
-Developed and trained a machine learning forecasting model updated daily through MageAI, offering accurate cryptocurrency forecasts.
-Engineered seamless data flow from PostgreSQL to PowerBI, creating a dynamic report showcasing market scenarios, trends, sentiments, and forecasts.
-Implemented sophisticated DAX measures in PowerBI, equipping stakeholders with advanced statistical and technical analysis capabilities for informed decision-making in the volatile cryptocurrency landscape.
+This repository showcases the development of an end-to-end cryptocurrency dashboard orchestrated on AWS infrastructure using MageAI. The dashboard captures real-time OHLC (Open, High, Low, Close) data via an API and stores it in AWS PostgreSQL. Additionally, it integrates web scraping and NLP BERT sentiment analysis to quantify public sentiments, enriching stakeholders' comprehension of market dynamics.
+
+## Features
+- Real-time Data Capture: Utilizes an API to fetch real-time OHLC data for cryptocurrencies.
+- Storage in AWS PostgreSQL: Stores the collected data securely in AWS PostgreSQL for further analysis.
+- Sentiment Analysis: Integrates web scraping and NLP BERT sentiment analysis to quantify public sentiments related to cryptocurrencies.
+- Machine Learning Forecasting: Develops and trains a machine learning forecasting model, updated daily through MageAI, offering accurate cryptocurrency forecasts.
+- Dynamic Reporting with PowerBI: Engineers seamless data flow from PostgreSQL to PowerBI, creating a dynamic report showcasing market scenarios, trends, sentiments, and forecasts.
+- Advanced Analysis Capabilities: Implements sophisticated DAX measures in PowerBI, equipping stakeholders with advanced statistical and technical analysis capabilities for informed decision-making in the volatile cryptocurrency landscape.
+
+## How to Use
+- Clone the repository to your local machine.
+- Set up AWS infrastructure with PostgreSQL.
+- Configure MageAI for data orchestration.
+- Run the provided scripts for data collection, sentiment analysis, and machine learning forecasting.
+- Integrate the generated data with PowerBI for dynamic reporting.
+- Explore the dashboard and leverage advanced analysis capabilities for insightful decision-making.
 
 ```
 cd crypto_prices-Mage.ai
 mage start
 ```
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/lunaSnowflake/CryptoCurrency)
+
 
 ### 🌟 Acknowledgements:
 I am open to any suggestions, connect with me anywhere! <br/>
@@ -51,3 +66,5 @@ Check out my [GitHub](https://github.com/lunaSnowflake) profile for more details
 [![Twitter](https://img.icons8.com/color/48/twitter--v1.png)](https://twitter.com/lunatic_sain) 
 <br/>
 <br/>
+<br/>
+
