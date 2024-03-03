@@ -1,0 +1,36 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: blue
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: morning surf
+  retry_config: null
+  status: updated
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: morning_surf
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2023-09-18 05:27:34.928513+00:00'
+data_integration: null
+description: Scrap Market Sentiment (News, Community, Twitter)
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: Market Sentiment
+notification_config: {}
+retry_config: {}
+run_pipeline_in_one_process: false
+spark_config: {}
+tags: []
+type: python
+updated_at: '2023-09-20 11:34:19'
+uuid: market_sentiment
+widgets: []

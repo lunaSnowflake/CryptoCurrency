@@ -1,0 +1,188 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: pink
+  configuration:
+    dynamic: false
+  downstream_blocks:
+  - load_mcapvol
+  - load_prices
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Init
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: init
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - prices_transform
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Load Prices
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - init
+  uuid: load_prices
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - export_prices_rds
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Prices_transform
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_prices
+  uuid: prices_transform
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - mcapvol_transform
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_McapVol
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - init
+  uuid: load_mcapvol
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_path: null
+  downstream_blocks:
+  - export_mcapvol_rds
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: mcapvol_transform
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_mcapvol
+  uuid: mcapvol_transform
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export_prices_RDS
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - prices_transform
+  uuid: export_prices_rds
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export_mcapvol_RDS
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - mcapvol_transform
+  uuid: export_mcapvol_rds
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2023-09-17 02:41:02.508742+00:00'
+data_integration: null
+description: Stream Crypto Prices from Market to RDS.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: Crypto Market
+notification_config: {}
+retry_config: {}
+run_pipeline_in_one_process: false
+spark_config: {}
+tags: []
+type: python
+updated_at: '2023-09-18 05:12:47'
+uuid: crypto_market
+variables:
+  END_DATETIME: 2023-09-18 05:00:00
+  START_DATETIME: 2023-09-18 04:50:00
+  coin_names:
+  - Aave
+  - Bitcoin
+  - Cardano
+  - Chainlink
+  - Dogecoin
+  - EOS
+  - Ethereum
+  - Litecoin
+  - Polkadot
+  - Stellar
+  - Tether
+  - Uniswap
+  - USD-Coin
+  - XRP
+  coin_symbols:
+  - AAVE
+  - BTC
+  - ADA
+  - LINK
+  - DOGE
+  - EOS
+  - ETH
+  - LTC
+  - DOT
+  - XLM
+  - USDT
+  - UNI
+  - USDC
+  - XRP
+  coins:
+    AAVE: Aave
+    ADA: Cardano
+    BTC: Bitcoin
+    DOGE: Dogecoin
+    DOT: Polkadot
+    EOS: EOS
+    ETH: Ethereum
+    LINK: Chainlink
+    LTC: Litecoin
+    UNI: Uniswap
+    USDC: USD-Coin
+    USDT: Tether
+    XLM: Stellar
+    XRP: XRP
+widgets: []

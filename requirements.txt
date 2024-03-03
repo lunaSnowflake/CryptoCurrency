@@ -1,0 +1,11 @@
+pandas
+numpy
+requests
+beautifulsoup4
+requests_html
+transformers
+selenium
+mysql-connector-python
+apache-airflow
+logging
+python-decouple
